@@ -1,0 +1,330 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/izta.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="a">
+<h1>Semana Santa en Mexico </h1>
+</div>
+<div data-role="main" class="ui-content">
+<center>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/izta.jpg',1)"><img src="imagenes/semana.jpg" width="400" height="263" id="Image21"></a><br>
+</center>
+<br>
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Que significa la semana santa?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Que religiones la practican?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Semana santa en Atlixco</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Celebración en el estado de Puebla</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Celebracion en Iztapalapa</h2>
+</a>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Celebración en el estado de San Luis Potosi</h2>
+</a>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Celebración en el estado de Guerrero</h2>
+</a>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Celebración en el estado de Oaxaca</h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+  <img src="imagenes/persona_azul.png" width="46" height="46">
+  </div>
+  <div>
+  <h4>Aplicacion Dos</h4>
+  <h4>Mijael Flores Cerezo</h4>
+  </div>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿Que significa la semana santa?</h1>
+ 
+  </div>
+  <div data-role="content" >
+  <div>
+<p>Esta tradicional conmemoración religiosa, evoca cada año, la pasión, muerte y resurrección de Jesús de Nazaret</p>
+<p>La Semana Santa no tiene una fecha definida, aunque casi siempre se presenta entre los meses de Marzo y Abril, esto debido a que obedece al calendario católico y del inicio de la cuaresma que son cuarenta días previamente de la preparación de la Pascua.</p>
+ <p> <b>Domingo de Ramos.</b> En éste se recuerda la entrada de Jesús a Jerusalén en la que el pueblo lo alaba como rey con cantos y palmas. Por ese motivo en la actualidad, las personas que participan en las procesiones, así como los asistentes a misa llevan palmas para que las bendigan.
+</p>
+<p><b>Lunes Santo.</b> Durante la misa de este día, el evangelio de San Juan que es proclamado refleja el pasaje de la Unción en Betania, cuando Jesús visita la casa de Lázaro (al que había resucitado), donde María, una de las hermanas de éste, le unge costosos perfumes.
+</p>
+<p><b>Martes Santo.</b> Este día se recuerda mediante el evangelio de San Juan cuando Jesús anticipa a sus discípulos la traición de Judas Iscariote, así como las tres veces que San Pedro lo negará.
+</p>
+<P><b>Miércoles Santo.</b> Marca el final de la Cuaresma y el comienzo de la Pascua; en éste se recuerda el momento en el que Judas Iscariote con el Sanedrín, el tribunal religioso judío, para pactar la entrega de Jesús a cambio de 30 monedas.
+</P>
+<p><b>Jueves Santo.</b> Se recuerda la Última Cena de Jesús con sus apóstoles en la que les lavó los pies. Al terminar la cena Jesús se fue a orar al Huerto de los Olivos, ahí pasó toda la noche y después de la oración llegaron a aprehenderlo.
+</p>
+<p><b>Viernes Santo.</b> Ese día se recuerda la Pasión de Cristo, su prisión, los interrogatorios de Herodes y Pilato; la flagelación, la coronación de espinas y la crucifixión. Se conmemora con un Via Crucis y con la ceremonia de la Adoración de la Cruz.
+</p>
+<center>
+<img src="imagenes/cruz.jpg">
+</center>
+<p><b>Sábado de Gloria.</b> Se trata del día que pasó entre la muerte y la resurrección de Jesús; para los cristianos representa un momento de luto y tristeza. Por la noche se lleva a cabo una vigilia pascual para celebrar el regreso de Cristo; aquí se acostumbra bendecir el agua y encender las velas en señal de la Resurrección de Jesús, la gran fiesta de los católicos.
+</p>
+<p><b>Domingo de Resurrección.</b>  También se le conoce como Domingo de Pascua. Es el día más importante los católicos, ya que se recuerda el momento en que Jesús resucitó y es interpretado como oportunidad de salvación, de entrar al cielo. Pascua es el paso de la muerte a la vida.
+</p>
+<center>
+<img src="imagenes/resurreccion.jpg">
+</center>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicacion Dos, MFC</h4>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿Que religiones la practican?</h1>
+ </div>
+<div data-role="content">
+ <div>
+ <p><b><i>Los Catolicos</i></b></p>
+ <img src="imagenes/catolico.jpg">
+ <p>La Semana Mayor para los católicos es la época en la que se recuerda y celebra los hechos más relevantes en la vida de Jesús de Nazaret (la Pasión, Muerte y Resurrección), comenzando con el llamado Domingo de Ramos y finalizando el Domingo de Resurrección o también llamado de Pascua.</p>
+ <br>
+ <p><b><i>Los Cristianos</i></b></p>
+ <img src="imagenes/cristianismo.jpg">
+ <p>Para los miembros de la iglesia cristiana evangélica, la Semana Santa es el tiempo para recordar la muerte de Cristo. Para conmemorarla, se congregan en una jornada de oración y adoración, la cual inicia el jueves santo a las 9:00 de la noche y se extiende por 24 horas. 
+En esta reunión se dan cita grupos artísticos y musicales, ya que los cristianos creen que “Dios habita en medio de la alabanza”. Además, para ellos es fundamental la vigilia, es decir, pasar una noche en vela y adorando a Dios.</p>
+ <br>
+ <p><b><i>Pentecostales</i></b></p>
+ <img src="imagenes/pentecostal.jpg">
+ <p>La celebración de la Semana Santa para los pentecostales inicia el jueves a las 2:00 de la tarde con un desfile, en el cual reparten volantes, entonan canciones e invitan a toda la comunidad a congregarse en una reunión que tiene lugar en su centro de culto a las 6:00 de la tarde.</p>
+ <br>
+ <p><b><i>Adventistas</i></b></p>
+ <img src="imagenes/adventista.jpg">
+ <p>En el sentir de los adventistas, la Semana Santa es la conmemoración de la pasión de Cristo; sin embargo, los seis días los trabajan normalmente, además, no tienen prohibición para ingerir alimentos, aunque tienden a ser vegetarianos.</p>
+ <br>
+ <p><b><i>Testigos de Jehová</i></b></p>
+ <img src="imagenes/testigos.jpg">
+ <p>Los Testigos de Jehová consideran que la Semana Mayor es una fecha común; ellos celebran anualmente la muerte de Jesús, pero lo hacen según el calendario arameo. En la dicha reunión comparten vino y pan, tal como lo hizo el Señor en la última cena.</p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Dos, MFC</h4>
+ </div>
+ </div>
+</div>
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Semana santa en Atlixco</h1>
+ </div>
+ <div data-role="content" >
+ <div>
+ <p> El Vía Crucis de Atlixco, en el estado de Puebla, reúne desde hace más de un siglo en Semana Santa a un grupo de penitentes capaces de traspasar el umbral del dolor por su devoción, al salir en procesión encapuchados y descalzos.</p>
+ <center>
+ <img src="imagenes/viacrusis.jpg">
+ </center>
+<p>El Viernes Santo en las principales calles de Atlixco, se realiza la Procesión de los Engrillados; en hombres que en forma de penitencia recorren más de 3 kilómetros con el rostro cubierto con tela negra, cargando cadenas con un peso aproximado de 50 kilos y con espinas incrustadas en el cuerpo y en la cabeza en forma de corona para ofrecer una penitencia.</p>
+<center>
+<img src="imagenes/engrillados.jpg">
+</center>
+<p>Se cubren con alfombras decorativas elaboradas con serrín de colores en un recorrido de cinco kilómetros que comienza en el Exconvento de San Francisco.</p>
+<center><img src="imagenes/alfombras.jpg"></center>
+<p>Bajo el anonimato, el devoto confiesa que lleva un lustro participando y que lo hace con orgullo por todos los favores que el Señor le ha dado.</p>
+<center><img src="imagenes/jesus.jpg"></center>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Mas Fotografias</h1>
+<div>
+<p> Imagenes : </p>
+<p>Otro de los atractivos del municipio de Atlixco durante Semana Santa es la procesión del silencio, que se realizará el próximo viernes santo, y que se ha llevado a cabo desde hace 20 años.</p>
+<br>
+<center><img src="imagenes/jesus1.jpg"></center>
+<br>
+<p>Atlixco es importante por muchas razones, entre ellas la floricultura, tenemos que seguir desarrollando esta vocación turística y sobre todo embellecer con ellas nuestra ciudad; este tapete floral </p>
+<center><img src="imagenes/mural.jpg"></center>
+</div>
+</div>
+</div>
+</div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Dos, MFC</h4>
+ </div>
+ </div>
+ </div>
+  <div data-role="page" id="Pagina" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Celebracion en el estado de Puebla</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <h2>Ver la televición</h2></div>
+ <img src="imagenes/tiempo.jpg">
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Dos, MFC</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Celebracion en Iztapalapa</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p>Los Festejos de Semana Santa de Iztapalapa son Patrimonio Cultural Intangible de la Ciudad de México. Desde hace 172 años, millones de mexicanos y turistas extranjeros han rememorado en el Cerro de la Estrella de Iztapalapa, la pasión de Cristo, la historia de cómo el hijo de Dios sufrió por el perdón de los pecados de la humanidad.</p>
+ <p>La representación del Vía Crucis en Iztapalapa comienza con el Domingo de Ramos, con la bendición de las Palmas en la Parroquia de San Lucas, y la Entrada Triunfal de Jesús de Nazaret a Jerusalén, en el santuario del Señor de la Cuevita. El jueves Santo: se celebra la procesión por las principales calles emulando la visita a las Siete Casas, que en este caso es a los ocho barrios; la última cena; el lavatorio en el Jardín Cuitláhuac; la Oración en el Huerto de los Olivos y la Aprehensión, en el Cerro de la Estrella. El Viernes Santo día de la Tragedia Litúrgica: El Juicio: Presentación del Nazareno ante Poncio Pilatos; los clarines anuncian que El Redentor ha sido condenado: Azotes y Coronación se escenifican en la explanada del Jardín Cuitláhuac.</p>
+<p>Acto seguido, inicia el Vía Crucis rumbo al Gólgota (Cerro de la Estrella): en este trayecto se representan las tres caídas, la primera en la calle de Ayuntamiento (calle de Cuauhtémoc) las otras dos en la Calle de Hidalgo y Estrella, se escenifican los demás pasos al Calvario. Cientos de Nazarenos que también llevan a cuestas su cruz y corona de espinas, centuriones, soldados romanos y heraldos abren paso al Mecías acompañado por sus discípulos, vírgenes y samaritanos; detrás los clarines y una banda tocan la Marcha Dragona. Crucifixión con los villanos Dimas y Gestas, la presencia de Judas en la horca; a las tres de la tarde, da fin esta representación de la Pasión y muerte del Hijo del Hombre en el Cerro de la Estrella en Iztapalapa.</p>
+<center><img src="imagenes/izta.jpg"></center>
+</div>
+</div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Dos, MFC</h4>
+ </div>
+ </div>
+ </div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Celebración en el estado de San Luis Potosi</h1>
+ </div>
+ <div data-role="content">
+ <div>
+<p><b>La Procesión del Silencio de San Luis Potosí</b> es un evento anual que conmemora la pasión y muerte de Cristo y a Nuestra Señora de la Soledad. Ocurre en la noche del Viernes Santo, empezando en el Templo del Carmen, de donde es originario, y el recorrido sigue a través de las calles del centro histórico de la ciudad de San Luis Potosí. Durante el evento se encuentran los sonidos de tambores y cornetas, pero ningún participante o espectador habla, ameritando su nombre. Es una de las celebraciones de Semana Santa más importante de México y fue declarada parte del patrimonio cultural del estado de San Luis Potosí en el 2013.</p>
+<p>La procesión comienza en la Iglesia de El Carmen, exactamente a las 20:00 horas.2 El sonido de una corneta convoca al Guardia Pretoriana el cual marcha desde el Teatro de la Paz hasta la Iglesia de El Carmen. El centurian golpea tres veces a la puerta principal y la corneta que va en el caballo despeja el camino y silencia a la multitud para la procesión.4 Tan sólo esta parte de la procesión dura dos horas.8 El evento dura más de cuatro horas y abre paso a lo largo de las principales calles del centro histórico, pasando por puntos de referencia tales como el Museo de la máscara, el Palacio de Gobierno de la plaza principal de la ciudad y la catedral que mide más de 3,5 kilómetros.</p>
+<p>Hay veintitrés pasos de misterio principales, con el final se marca la procesión con el paso de palio de Nuestra Señora de la Soledad. </p>
+<center><img src="imagenes/luis.jpg"></center>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Dos, MFC</h4>
+ </div>
+ </div>
+ </div>
+ <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Celebración en el estado de Guerrero</h1>
+ </div>
+ <div data-role="content" >
+ <div>
+ <p>La Semana Santa en Taxco (del 20 al 27 de Marzo del 2016) es una tradición muy antigua, conocida internacionalmente, data de la época de la Conquista española a América, desde la fundación de esta colonial ciudad, donde los esclavos negros traídos de África y los indios rebeldes, eran sometidos a torturas para infundir temor a los demás esclavos y así realizaran trabajos más forzados, evitando también que quisieran escapar. Se realiza de acuerdo al calendario católico en el mes de marzo ó abril. Según lo marque. La celebración comienza 4 días antes, en el Miércoles de Ceniza con el tiempo de preparación en que los católicos reflexionan sobre el hecho de que Jesucristo haya dado su vida para salvarnos. Llamado "Cuaresma". Cada viernes de vigilia el sacrificio consiste en no comer carnes rojas. Antiguamente se evitaban las diversiones, visitas y ruidos en señal de respeto</p>
+ <p>El Domingo de Resurrección (27 de Marzo del 2016).- Entre las 5 y las 6 de la tarde se realiza la última procesión (con todos los movimientos católicos juveniles) donde la imagen del cristo redentor lleva en su mano derecha un estandarte con las heridas de su crucifixión, es acompañado por las imágenes de la Virgen María y San Miguel, como en las anteriores recorren las principales calles de la ciudad. Y así conjugándose la fé, el sacrificio, el dolor, la alegría y el amor, la ciudad vuelve a su movimiento cotidiano con las firmes intenciones de continuar buscando el Cristo Redentor del Amor y la Paz en el Mundo".</p>
+<center><img src="imagenes/guerrero.jpg"></center>
+</div>
+</div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Dos, MFC</h4>
+ </div>
+ </div>
+ </div>
+ <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Celebración en el estado de Oaxaca</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p><b>Exposición de Estandartes y Relicarios</b></p>
+
+<p>La ciudad de Oaxaca se caracteriza por tener un vasto legado religioso, parte del cual se puede apreciar en esta exposición. Así también estos estandartes y relicarios embellecen la procesión del silencio, con sus finos terciopelos adornados con los regalos de los fieles, como monedas de oro, milagros de oro y plata. Los relicarios pertenecen a las cofradías o a familias que los tienen bajo su cuidado como una gran joya. Así pues, se puede admirar la mezcla de lo indígena con lo español, arte mestizo que demuestra lo que es una cultura a la que se le rinde homenaje.</p>
+<P><b>Procesión del Silencio</b></P>
+<p>Es una procesión de carácter luctuoso en el cual se le da el pésame a la Virgen Morena. Su característica principal es que tantos los participantes como los espectadores mantienen silencio al paso de las imágenes de la procesión. Así se demuestra el respeto a la muerte de Jesús. La procesión pasa por las calles muy importantes de la ciudad: Andador Turístico, Xolotl, García Vigil, Morelos y termina en la iglesia de la Sangre de Cristo, todo el recorrido es hecho con un orden programado.</p>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Viernes de Samaritana</h1>
+<div>
+<p> Celebrado el cuarto viernes de cuaresma, denominado así por un pasaje bíblico en el cual una mujer samaritana da agua a Jesús para calmar su sed.
+
+En la ciudad se acostumbra a dar aguas frescas y típicas de la región a todo aquel que acudía a los atrios de las iglesias, Actualmente se ofrecen de manera gratuita en: iglesias, casas particulares, hoteles, escuelas, restaurantes, dependencias gubernamentales, etc., a los transeúntes para que se deleiten con los diversos sabores, olores y colores característicos de esta festividad. </p>
+<br>
+<center><img src="imagenes/samaritana.jpg"></center>
+<br>
+</div>
+</div>
+</div>
+</div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Dos, MFC</h4>
+ </div>
+ </div>
+ </div>
+ <div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Celebracion en el estado de Puebla</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p>La celebración de Semana Santa es para los poblanos una de las conmemoraciones más importantes del año cristiano; durante estos días aquellas personas que profesan alguna de las diferentes confesiones de la fe cristiana acuden a las iglesias más emblemáticas de Puebla para recordar la Pasión, Muerte y Resurrección de Jesús de Nazaret.</p>
+ <br>
+<center><p><b>Procesión de Viernes Santo</b></p>
+<img src="imagenes/puebla.jpg" ></center>
+<p>Una de los actos mas significativos durante la semana santa es la tradicional Procesión de Viernes santo, misma que este 2016 cumple 25 años y que es considerada de las mas grandes del país.</p>
+<p>Antiguamente se representaba la muerte de Judas en la Plaza, se ponía un cable de un lado al otro y en el medio se colgaba un Pelele vestido con las ropas de hombre y relleno de bálago, a un lateral se ponían los mozos con las escopetas con cartuchos de fogueo y cuando el sábado las campanas tocaban a Gloria, empezaba el tiroteo, con el consiguiente jolgorio formado por los espectadores en su mayoría gente joven, este tiroteo continuaba hasta que el Judas caía ardiendo al suelo.
+Durante la Semana Santa tienen lugar las distintas procesiones que representan los últimos días de Cristo.
+El domingo de Resurrección después de la misa de la madrugada tiene lugar la procesión, con las imágenes de la Virgen y el Niño, salen de la Iglesia de Santiago Apóstol con dirección distinta. “ El Encuentro “ tiene lugar en la calle la “Barrera”, con la Virgen van las personas mayores y con el Niño la gente joven y a la carrera, el momento del encuentro es emocionante, se dan los vivas correspondientes y se arroja gran cantidad de flores, sobre todo de tomillos, que recogen los niños por la tarde. Después todos juntos regresan al templo. El domingo de Resurrección es tradicional irse al campo a comerse una caldereta con la familia y amigos.</p>
+</div>
+</div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Dos, MFC</h4>
+ </div>
+ </div>
+ </div>
+
+ </body>
+ </html>
